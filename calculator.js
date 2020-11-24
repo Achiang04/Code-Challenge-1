@@ -1,13 +1,13 @@
 const Calculator = function() {
   // do code here
-  // let hasil = "";
+  let tampung;
   this.evaluate = function(str) {
-    console.log(str)
+    // console.log("str", str)
+    tampung = eval(str)
+    // console.log("tampung", tampung)
+    // console.log("result", eval(str))
+    return tampung;
   }
-  // for (let i = 0; i < str; i++){
-  //   hasil += str[i]
-  // }
-  
 };
 
 // Test Function do not edit
@@ -26,5 +26,3 @@ console.log("Bonus Test")
 Test(calculate.evaluate('10 + 6 / 2'), 13);
 
 // Test(calculate('contoh'), 13);
-
-//testing
